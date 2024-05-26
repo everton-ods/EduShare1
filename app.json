@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "edushare",
+    "slug": "edushare",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "bundleIdentifier": "com.edushare",
+      "supportsTablet": true
+    },
+    "android": {
+      "googleServicesFile": "./google-services.json",
+      "package": "com.edushare",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "31e603bc-a691-48e8-9f88-07a6dd5d6754"
+      }
+    },
+    "plugins": [
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth",
+      "@react-native-firebase/crashlytics",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": ["path/to/file.ttf"]
+        }
+      ]
+    ]
+  }
+}
